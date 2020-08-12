@@ -43,6 +43,7 @@ public class Principal {
         c4.verificarSenha("Lucas", "123456");
         c4.verificarSenha("Lucas", "Segredo");
         c4.verificarSenha("Lucas", "teste");
+        c4.verificarSenha("Lucas", "teste");
     }
     
 }
