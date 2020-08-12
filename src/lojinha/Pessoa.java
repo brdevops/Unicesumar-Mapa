@@ -11,15 +11,15 @@ package lojinha;
  */
 public abstract class Pessoa
 {
-    protected String pessoa;
+    protected String nome;
     protected String documento;
 
     public String getPessoa() {
-        return pessoa;
+        return nome;
     }
 
     public void setPessoa(String pessoa) {
-        this.pessoa = pessoa;
+        this.nome = pessoa;
     }
 
     public String getDocumento() {
@@ -30,15 +30,20 @@ public abstract class Pessoa
         this.documento = documento;
     }    
     
-    public Pessoa(String pessoa, String documento) 
+    public Pessoa(){
+        this("", "");
+    }
+    
+    public Pessoa(String nome, String documento) 
     {
-        this.pessoa = pessoa;
+        this.nome = nome;
         this.documento = documento;
     }
     
     public void exibeDados() 
     {
-        System.out.println("Nome da pessoa: " + pessoa);
+        System.out.println("----------------------------------------");
+        System.out.println("Nome da pessoa: " + nome);
         System.out.println("Documento: " + documento);
     }
     

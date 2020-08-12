@@ -11,15 +11,21 @@ package lojinha;
  */
 public class Presidente extends Funcionario {
     
-    public Presidente(String pessoa, String documento) {
-        super(pessoa, documento);
+    public Presidente(){
+        this("", "", 0, 0);
+    }
+    
+    public Presidente(String nome, String documento, double salario, int ramal) {
+        super(nome, documento, salario, ramal);
     }
     
     @Override
     public void exibeDados() 
     {
-        System.out.println("Nome do Presidente: " + pessoa);
+        System.out.println("----------------------------------------");        
+        System.out.println("Nome do Presidente: " + nome);
         System.out.println("Documento: " + documento);
+        System.out.println("Ramal :" + ramal);
     }
-    
+       
 }

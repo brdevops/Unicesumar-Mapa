@@ -11,15 +11,21 @@ package lojinha;
  */
 public class Secretaria extends Funcionario {
     
-    public Secretaria(String pessoa, String documento) {
-        super(pessoa, documento);
+    public Secretaria(){
+        this("", "", 0, 0);
+    }
+    
+    public Secretaria(String nome, String documento, double salario, int ramal) {
+        super(nome, documento, salario, ramal);
     }
     
     @Override
     public void exibeDados() 
     {
-        System.out.println("Nome da Secretária: " + pessoa);
+        System.out.println("----------------------------------------");  
+        System.out.println("Nome da Secretária: " + nome);
         System.out.println("Documento: " + documento);
+        System.out.println("Ramal :" + ramal);
     }
     
 }

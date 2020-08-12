@@ -7,21 +7,36 @@ package lojinha;
 
 /**
  *
- * @author brgco
+ * @author Bruno Gonçalves Costa - Matricula
  */
 public abstract class Funcionario extends Pessoa {
     protected double salario;
     protected int ramal;
     
-    public Funcionario(String pessoa, String documento) {
-        super(pessoa, documento);
+    public Funcionario(){
+        this("", "", 0, 0);
+    }
+    
+    public Funcionario(String nome, String documento, double salario, int ramal) {
+        super(nome, documento);
+        this.salario = salario;
+        this.ramal = ramal;
     }
     
     @Override
     public void exibeDados() 
     {
-        System.out.println("Nome do Funcionário: " + pessoa);
+        System.out.println("----------------------------------------");
+        System.out.println("Nome do Funcionário: " + nome);
         System.out.println("Documento: " + documento);
+        System.out.println("Ramal :" + ramal);
+    }
+    
+    public void calculaSalarioAnual()
+    {
+        double salarioAnual;
+        salarioAnual = salario * 12;
+        System.out.println("O salário anual é de: R$" + salarioAnual);
     }
     
 }
