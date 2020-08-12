@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lojinha;
+package unicesumarMapa;
 
 /**
  *
@@ -11,7 +11,7 @@ package lojinha;
  */
 public abstract class Funcionario extends Pessoa {
     protected double salario;
-    protected int ramal;
+    protected int ramal; 
     
     public Funcionario(){
         this("", "", 0, 0);

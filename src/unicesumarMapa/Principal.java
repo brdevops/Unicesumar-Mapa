@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lojinha;
+package unicesumarMapa;
 
 /**
  *
@@ -42,7 +42,6 @@ public class Principal {
         c4.exibeDados();
         c4.verificarSenha("Lucas", "123456");
         c4.verificarSenha("Lucas", "Segredo");
-        c4.verificarSenha("Lucas", "teste");
         c4.verificarSenha("Lucas", "teste");
     }
     
