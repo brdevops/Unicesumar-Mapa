@@ -12,6 +12,15 @@ package lojinha;
 public class Vendedor extends Funcionario {
     
     private double comissao;
+
+    public double getComissao() {
+        return comissao;
+    }
+
+    public void setComissao(double comissao) {
+        this.comissao = comissao;
+    }
+    
     
     public Vendedor(){
         this("", "", 0, 0, 0);

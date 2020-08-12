@@ -14,12 +14,12 @@ public abstract class Pessoa
     protected String nome;
     protected String documento;
 
-    public String getPessoa() {
+    public String getNome() {
         return nome;
     }
 
-    public void setPessoa(String pessoa) {
-        this.nome = pessoa;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getDocumento() {
