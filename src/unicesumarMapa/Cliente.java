@@ -47,6 +47,8 @@ public class Cliente extends Pessoa {
         System.out.println("----------------------------------------");
         System.out.println("Nome do Cliente: " + nome);
         System.out.println("Documento: " + documento);
+        System.out.println("Login: " + usuario);
+        System.out.println("Senha: " + senha);
     }
     
     public void verificarSenha(String Usuario, String senha)
